@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    place-content: center;
+    background: var(--off-black);
+
+    & .logo {
+        width: 100%;
+        --size: 220px;
+        max-width: var(--size);
+    }
+}

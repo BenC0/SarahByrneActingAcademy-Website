@@ -1,0 +1,103 @@
+#Hero {
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+    position: relative;
+    place-content: flex-start;
+}
+
+.background {
+    top: 50%;
+    left: 50%;
+    width: auto;
+    z-index: -1;
+    min-width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: 50% 50%;
+    transform: translate(-50%, -45%);
+}
+
+.logo {
+    --size: 282px;
+    --offset: 2em;
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    left: var(--offset);
+    bottom: var(--offset);
+}
+
+.navigation {
+    gap: .5ch;
+    padding: 0;
+    width: auto;
+    margin-top: 2em;
+    position: relative;
+    
+    & .linkContainer {
+        flex-grow: 1;
+        padding-bottom: .5em;
+
+        & a {
+            font-size: 16px;
+            display: inline-block;
+            letter-spacing: 0.05em;
+            font-family: var(--font-family-primary);
+
+            padding: .35em 1em;
+            border-radius: 5px;
+            background: var(--black);
+            text-transform: uppercase;
+            transition: all .15s ease-in;
+            border: 1px solid transparent;
+            
+            &.active {
+                background: var(--gold);
+            }
+            
+            &:hover {
+                box-shadow: 2.83px 2.83px 13px #4E4861;
+            }
+
+            &,
+            &:visited {
+                color: var(--white);
+                text-decoration: none;
+            }
+        }
+
+        & .sublinks {
+            left: 0;
+            right: 0;
+            gap: 1ch;
+            opacity: 1;
+            font-size: .8em;
+            padding: .5em 1em;
+            position: absolute;
+            border-radius: 1em;
+            top: calc(100%);
+            background: var(--white);
+            transition: all .3s ease-in;
+
+            opacity: 0;
+            pointer-events: none;
+
+            & a {
+                letter-spacing: 0px;
+                color: var(--black);
+                text-transform: none;
+                background: var(--gold);
+            
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+        }
+
+        &[has_sublinks="true"]:hover > .sublinks {
+            opacity: 1;
+            pointer-events: inherit;
+        }
+    }
+}
