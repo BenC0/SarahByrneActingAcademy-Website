@@ -64,7 +64,7 @@ h6 { font-size: 2rem; }
 
 /*  Layout Scaffolding
   Example Structure:
-      section.content_wrapper
+      section.content-wrapper
       |-> div.content
           |-> div.example_item
           |-> img.example_item
