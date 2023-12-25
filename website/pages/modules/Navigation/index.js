@@ -14,6 +14,12 @@ export default function Navigation() {
                 <Link href="/about/meet-the-team" className={isActive("/about/meet-the-team") ? styles.active : ""} >Meet The Team</Link>
                 <Link href="/uniforms" className={isActive("/uniforms") ? styles.active : ""} >Uniforms</Link>
                 <Link href="/contact" className={isActive("/contact") ? styles.active : ""} >Contact</Link>
+                <Link href="https://facebook.com">
+                    <img src="/img/fb-light.webp" alt="f" />
+                </Link>
+                <Link href="https://facebook.com">
+                    <img src="/img/insta-light.webp" alt="f" />
+                </Link>
             </nav>
         </section>
     );

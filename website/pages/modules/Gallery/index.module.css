@@ -1,0 +1,41 @@
+.Gallery {
+    overflow: hidden;
+}
+
+.GalleryImages {
+    display: flex;
+    position: relative;
+    /* animation: 2.5s scrollImages linear infinite; */
+
+    & .galleryImage {
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}
+
+.fadeIn,
+.lastActive,
+.active {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.lastActive,
+.fadeIn {
+    z-index: 0;
+}
+
+@keyframes scrollImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

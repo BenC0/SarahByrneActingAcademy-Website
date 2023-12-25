@@ -81,7 +81,7 @@ h6 { font-size: 2rem; }
   display: flex;
   padding: 1rem;
   margin: 0 auto;
-  max-width: calc(1320px + 2rem);
+  max-width: calc(980px + 2rem);
 }
 
 .column {
