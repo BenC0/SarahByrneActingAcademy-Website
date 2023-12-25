@@ -1,5 +1,6 @@
 #Navigation {
     width: 100%;
+    z-index: 10;
     top: 0;
     position: sticky;
     background-color: var(--black);
