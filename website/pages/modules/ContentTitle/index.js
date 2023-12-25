@@ -1,7 +1,6 @@
 import styles from "./index.module.css"
 
 export default function ContentTitle(props) {
-    console.warn(props.underline)
     const underline = !!props.underline
     return (
         <section className="content_wrapper">
