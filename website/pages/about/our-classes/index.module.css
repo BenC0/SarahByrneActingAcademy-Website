@@ -1,0 +1,17 @@
+.classRow {
+    display: flex;
+    margin-bottom: 3rem;
+
+    & .classDetails {
+        flex-grow: 1;
+
+        & h3 {
+            margin: 0 0 -.5em;
+        }
+
+        & .accent {
+            font-weight: bold;
+            color: var(--gold);
+        }
+    }
+}
