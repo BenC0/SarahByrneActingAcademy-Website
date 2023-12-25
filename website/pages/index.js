@@ -1,4 +1,4 @@
-import Layout from './layouts'
+import { HomepageLayout } from './layouts'
 import Head from 'next/head';
 import Footer from "./modules/Footer";
 import Hero from "./modules/Hero";
@@ -8,7 +8,7 @@ import TripleCallout from "./modules/TripleCallout";
 
 export default function Home() {
   return (
-		<Layout>
+		<HomepageLayout>
       <Head>
         <title>Sarah Byrne Acting Academy</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,6 +18,6 @@ export default function Home() {
       <HomepageForm />
       <TripleCallout />
       <Footer />
-		</Layout>
+		</HomepageLayout>
   );
 }
