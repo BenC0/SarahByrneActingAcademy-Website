@@ -35,13 +35,13 @@ export default function Contact() {
                     marginTop: "-2em",
                 }}>
                     <Link href="https://www.facebook.com/sarahbyrneactingacademy" target="_blank">
-                        <img src="/img/fb.webp" alt="f" style={{
+                        <img src="/img/fb.webp" alt="facebook" style={{
                             width: "39px",
                             height: "39px"
                         }}/>
                     </Link>
                     <Link href="hhttps://www.instagram.com/sarahbyrneacting/" target="_blank">
-                        <img src="/img/insta.webp" alt="i" style={{
+                        <img src="/img/insta.webp" alt="instagram" style={{
                             width: "39px",
                             height: "39px"
                         }}/>
