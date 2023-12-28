@@ -14,12 +14,12 @@ export default function Navigation() {
                 <Link href="/about/meet-the-team" className={isActive("/about/meet-the-team") ? styles.active : ""} >Meet The Team</Link>
                 <Link href="/uniforms" className={isActive("/uniforms") ? styles.active : ""} >Uniforms</Link>
                 <Link href="/contact" className={isActive("/contact") ? styles.active : ""} >Contact</Link>
-                <Link href="https://www.facebook.com/sarahbyrneactingacademy">
+                <Link href="https://www.facebook.com/sarahbyrneactingacademy" target="_blank">
                     <img src="/img/fb-light.webp" alt="f" style={{
                         marginBottom: "-5px"
                     }}/>
                 </Link>
-                <Link href="hhttps://www.instagram.com/sarahbyrneacting/">
+                <Link href="hhttps://www.instagram.com/sarahbyrneacting/" target="_blank">
                     <img src="/img/insta-light.webp" alt="i" style={{
                         marginBottom: "-5px"
                     }}/>

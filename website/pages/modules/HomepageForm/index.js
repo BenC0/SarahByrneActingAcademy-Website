@@ -1,5 +1,18 @@
 import styles from "./index.module.css"
 
+export function Form() {
+    return (
+        <form action="" className={`${styles.form} grid col-2`}>
+            <input type="text" placeholder="First Name" name="First Name" />
+            <input type="text" placeholder="Last Name" name="Last Name" />
+            <input type="email" placeholder="Email" name="Email" />
+            <input type="text" placeholder="Phone" name="Phone" />
+            <textarea type="textarea" placeholder="Type your message here..." name="Additional Notes"></textarea>
+            <input type="submit" value="Submit" />
+        </form>
+    )
+}
+
 export default function HomepageForm() {
     return (
         <section id="HomepageForm" className="content_wrapper">
@@ -11,14 +24,7 @@ export default function HomepageForm() {
                     <div className="copy">
                         <h3>Book your <span className="fc-black">free</span> trial with us</h3>
                     </div>
-                    <form action="" className={`${styles.form} grid col-2`}>
-                        <input type="text" placeholder="First Name" name="First Name" />
-                        <input type="text" placeholder="Last Name" name="Last Name" />
-                        <input type="email" placeholder="Email" name="Email" />
-                        <input type="text" placeholder="Phone" name="Phone" />
-                        <textarea type="textarea" placeholder="Type your message here..." name="Additional Notes"></textarea>
-                        <input type="submit" value="Submit" />
-                    </form>
+                    <Form />
                 </div>
                 <div className={styles.formImage}>
                     <img src="/img/vincoole_SBM_Agency047.webp" />
