@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import styles from "./index.module.css";
 
 export default function Gallery(props) {
+    props = !!props ? props : {images: []}
+    props.images = !!props.images ? props.images : []
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isTransitioning, setTransition] = useState(false);
 
