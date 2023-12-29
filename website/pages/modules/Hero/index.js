@@ -4,7 +4,7 @@ import styles from './index.module.css';
 export default function Hero() {
     return (
         <section id={styles.Hero} className='content-wrapper column'>
-            <nav className={`content ${styles.navigation}`}>
+            {/* <nav className={`content ${styles.navigation}`}>
                 <div className={styles.linkContainer} has_sublinks="false">
                     <Link href="/" className={styles.active}>Home</Link>
                 </div>
@@ -21,7 +21,7 @@ export default function Hero() {
                 <div className={styles.linkContainer} has_sublinks="false">
                     <Link href="/contact">Contact</Link>
                 </div>
-            </nav>
+            </nav> */}
             <div className={styles.logo}>
                 <img src="/img/logo.webp" />
             </div>

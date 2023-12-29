@@ -12,6 +12,7 @@ export default function Layout({ children }) {
 export function HomepageLayout({ children }) {
     return (
         <main className="content-wrapper column j-center">
+            <Navigation />
             {children}
         </main>
     )
