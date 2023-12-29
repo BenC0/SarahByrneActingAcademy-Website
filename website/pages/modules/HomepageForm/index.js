@@ -40,7 +40,7 @@ export default function HomepageForm() {
             <div className={`${styles.titleContainer} content a-center`}>
                 <h2>We have classes in Manchester and Oldham</h2>
             </div>
-            <div className="content a-flex-start">
+            <div className="content a-flex-start m-column">
                 <div className={`${styles.form_wrapper}`}>
                     <div className="copy">
                         <h3>Book your <span className="fc-black">free</span> trial with us</h3>

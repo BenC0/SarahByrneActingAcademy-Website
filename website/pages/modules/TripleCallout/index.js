@@ -2,7 +2,7 @@ import styles from "./index.module.css"
 
 export default function TripleCallout() {
     return (
-        <section id="TripleCallout" className={`${styles.TripleCallout} grid col-3`}>
+        <section id="TripleCallout" className={`${styles.TripleCallout} grid col-3 m-flex m-column`}>
             <div className={`${styles.callout} flex a-center column j-center`}>
                 <div className={styles.icon}>
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="38.999 39 122.001 122" viewBox="38.999 39 122.001 122" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">

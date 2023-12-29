@@ -11,15 +11,15 @@ export default function HomepageContent() {
             </div>
 
             <div className={`${styles.halfContent} ${styles.iconList} content column`}>
-                <div className="icon-list-item content a-center">
+                <div className="icon-list-item m-column content a-center">
                     <img src="/img/Drama-Symbol.webp" className="icon" />
                     <p>We teach our students the skills to become great actors while having fun, building confidence & meeting new friends.</p>
                 </div>
-                <div className="icon-list-item content a-center">
+                <div className="icon-list-item m-column content a-center">
                     <img src="/img/confidence-symbol_edited.webp" className="icon" />
                     <p>Our classes focus on confidence building and mentoring young people’s natural abilities.</p>
                 </div>
-                <div className="icon-list-item content a-center">
+                <div className="icon-list-item m-column content a-center">
                     <img src="/img/star-symbol_edited.webp" className="icon" />
                     <p>With our passionate tutors and industry connections our academy is the one where stars are born.</p>
                 </div>

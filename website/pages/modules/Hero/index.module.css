@@ -1,39 +1,44 @@
 #Hero {
     width: 100%;
-    height: 88vh;
+    max-height: 88vh;
     overflow: hidden;
     position: relative;
     place-content: flex-start;
+
+    @media screen and (max-width: 768px) {
+        /* height: 60vh; */
+    }
 }
 
 .background {
-    top: 50%;
-    left: 50%;
-    width: auto;
-    z-index: -1;
-    min-width: 100%;
-    position: absolute;
-    object-fit: cover;
-    object-position: 50% 50%;
-    transform: translate(-50%, -45%);
+    & img {
+        display: block;
+    }
 }
 
 .logo {
-    --size: 282px;
+    --size: 14wh;
     --offset: 2em;
     position: absolute;
     width: var(--size);
     height: var(--size);
     left: var(--offset);
     bottom: var(--offset);
+
+    @media screen and (max-width: 768px) {
+        --size: 150px;
+        --offset: 0;
+    }
 }
 
 .navigation {
     gap: .5ch;
+    left: 50%;
     padding: 0;
     width: auto;
     margin-top: 2em;
-    position: relative;
+    position: absolute;
+    transform: translateX(-50%);
     
     & .linkContainer {
         flex-grow: 1;

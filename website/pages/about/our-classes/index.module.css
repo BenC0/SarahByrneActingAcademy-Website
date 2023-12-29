@@ -2,6 +2,12 @@
     display: flex;
     margin-bottom: 3rem;
 
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     & .classDetails {
         flex-grow: 1;
 

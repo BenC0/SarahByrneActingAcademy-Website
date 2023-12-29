@@ -2,7 +2,7 @@ import styles from "./index.module.css"
 
 export default function Testimonials() {
     return (
-        <section id="Testimonials" className={`${styles.Testimonials} grid col-3`}>
+        <section id="Testimonials" className={`${styles.Testimonials} grid col-3 m-flex m-column`}>
             <div className={`${styles.testimonial} flex a-center column j-flex-start`}>
                 <div className={styles.icon}>
                     <svg preserveAspectRatio="xMidYMid meet" data-bbox="256.68 346.8 903.96 723.74" viewBox="256.68 346.8 903.96 723.74" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">

@@ -32,7 +32,7 @@ export default function AboutMeetTheTeam() {
                 underline="true"
             />
             <section className='content-wrapper'>
-                <div className='content grid col-2' style={{
+                <div className='content m-flex m-column grid col-2' style={{
                     paddingTop: "0",
                     marginTop: "-1em"
                 }}>
@@ -49,7 +49,7 @@ export default function AboutMeetTheTeam() {
                 </div>
             </section>
             <section className='content-wrapper'>
-                <div className='content grid col-2' style={{
+                <div className='content m-flex m-column grid col-2' style={{
                     paddingTop: "0"
                 }}>
                     <img src="/img/thumbnail_Sue 2.webp" />

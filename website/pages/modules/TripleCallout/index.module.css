@@ -8,6 +8,7 @@
 .callout {
     padding: 2em;
     background-color: var(--white);
+    text-align: center;
 
     & .icon {
         --size: 3rem;

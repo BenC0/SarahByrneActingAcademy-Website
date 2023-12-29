@@ -29,6 +29,10 @@ body {
   font-family: var(--font-family-secondary);
 }
 
+a[href^="mailto:"] {
+  word-break: break-all;
+}
+
 * { font-weight: inherit; }
 p { font-weight: 500; }
 
@@ -132,6 +136,19 @@ h6 { font-size: 2rem; }
   display: flex;
 }
 
+.inner-flex {
+  display: flex;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.grid {
+  gap: 1.22rem;
+  display: grid;
+}
+
 @media screen and (max-width: 768px) {
   .m-flex {
       display: flex;
@@ -215,19 +232,6 @@ h6 { font-size: 2rem; }
   .t-j-center {
       justify-content: center;
   }
-}
-
-.inner-flex {
-  display: flex;
-}
-
-.flex-spacer {
-  flex-grow: 1;
-}
-
-.grid {
-  gap: 1.22rem;
-  display: grid;
 }
 
 @media screen and (min-width: 990px) {
