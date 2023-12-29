@@ -26,7 +26,7 @@ export default function Contact() {
                 </div>
             </section>
             <ContentTitle 
-                title = "Follw us on socials"
+                title = "Follow us on socials"
                 accentTitle = "Keep Up To Date"
             />
             <section className="content_wrapper" style={{ padding: 0 }}>

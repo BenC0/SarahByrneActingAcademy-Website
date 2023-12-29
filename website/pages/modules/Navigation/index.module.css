@@ -12,6 +12,10 @@
     align-items: center;
     justify-content: flex-end;
 
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
     & a {
         font-size: 16px;
         color: var(--gold);
@@ -20,6 +24,71 @@
         &.active,
         &:hover {
             color: var(--white);
+        }
+    }
+}
+
+.mobileNavigation {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+
+    & .mobileNavigationBar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    & .mobileNavigationLogo {
+        --size: 120px;
+        display: block;
+        margin: -40px 0;
+        width: var(--size);
+        height: var(--size);
+    }
+
+    & .hamburger {
+        margin: 5px 0 -5px;
+        margin-right: 1em;
+        enable-background:new 0 0 32 32;
+    }
+
+    & .linkContainer {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        position: fixed;
+        padding-top: 20vh;
+        background-color: var(--off-black);
+        transition: all .15s ease-in;
+
+        & .closeIcon {
+            --offset: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: var(--offset);
+            right: var(--offset);
+        }
+
+        & a {
+            margin-bottom: 1em;
+            text-decoration: none;
+            color: var(--gold);
+
+            &.active,
+            &:hover {
+                color: var(--white);
+            }
+        }
+
+        &:not(.active) {
+            opacity: 0;
+            pointer-events: none;
         }
     }
 }
